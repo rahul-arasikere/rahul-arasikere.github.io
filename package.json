@@ -15,7 +15,7 @@
     "prebuild": "rimraf dist",
     "build": "npm run build:webpack && npm run build:hugo",
     "build:preview": "npm run build:webpack && npm run build:hugo:preview",
-    "build:hugo": "hugo -d ../dist -s site -v",
+    "build:hugo": "hugo -d ../dist -s site -v --minify",
     "build:hugo:preview": "npm run build:hugo -- -D -F",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
   },
@@ -65,6 +65,8 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.6.0",
-    "bootstrap": "^5.0.0-beta1"
+    "bootstrap": "^5.0.0-beta1",
+    "normalize.css": "^8.0.1",
+    "particles.js": "^2.0.0"
   }
 }

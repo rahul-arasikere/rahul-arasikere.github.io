@@ -2,5 +2,11 @@
 
 import "./css/main.css";
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
+import "./scss/colors.scss";
+
+import "bootstrap";
+
+import "particles.js/particles";
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'assets/particles.json');
