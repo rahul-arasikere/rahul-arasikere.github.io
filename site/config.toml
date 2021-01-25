@@ -2,11 +2,38 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "My new Victor-Hugo site"
-
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
+[menu]
+
+[[menu.main]]
+identifier = "home"
+name = "home"
+pre = "<i class='fa fa-heart'></i>"
+url = "/"
+
+[[menu.main]]
+identifier = "about"
+name = "about"
+pre = "<i class='fa fa-heart'></i>"
+url = "/about/"
+
+[[menu.main]]
+identifier = "blog"
+name = "blog"
+pre = "<i class='fa fa-heart'></i>"
+url = "/blog/"
+
 [params]
-  Description = "A simple portfolio website built with hugo."
+Description = "A simple portfolio website built with hugo."
+showNavbarSocialIcons = true
+github = "https://github.com/rahul-arasikere"
+twitter = "https://twitter.com/@rahul_arasikere"
+twitch = ""
+email = "arasikere.rahul@gmail.com"
+resume = ""
+linkedin = "https://linkedin.com/in/rahul-arasikere"
+instagram = ""
