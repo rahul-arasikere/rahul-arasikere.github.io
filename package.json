@@ -49,5 +49,8 @@
     "standard-version": "^9.1",
     "stylelint": "^13.9",
     "stylelint-config-standard": "^20.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.6.0"
   }
 }
