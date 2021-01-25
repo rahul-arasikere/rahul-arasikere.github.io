@@ -1,116 +1,85 @@
-# Victor Hugo
+# Hyas
 
-**A Hugo boilerplate for creating truly epic websites**
+[![GitHub release](https://img.shields.io/github/release/h-enk/hyas.svg?style=flat-square)](https://github.com/h-enk/hyas/releases)
+[![Build Status](https://img.shields.io/travis/h-enk/hyas.svg?style=flat-square)](https://travis-ci.com/h-enk/hyas)
+[![Netlify](https://img.shields.io/netlify/895a161c-86be-48a2-8c57-a8c5d68cd1a4?style=flat-square)](https://hyas.netlify.com/)
 
-This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
+Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default.
 
-Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
+![Hyas — Modern Hugo Starter](https://raw.githubusercontent.com/h-enk/hyas/master/images/tn.png)
 
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+## Demo
 
-## Usage
+- [hyas.netlify.app](https://hyas.netlify.app/)
 
-### :exclamation: Prerequisites
+## Quick start
 
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
+Get your Hyas site in 1 min.
 
-Next step, clone this repository and run:
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas)
+
+## Why Hyas?
+
+Six reasons why you should use Hyas:
+
+1. __Security aware__. Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
+
+2. __Fast by default__. Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea) by default. Hyas removes unused css, prefetches links, and lazy loads images.
+
+3. __SEO-ready__. Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.
+
+4. __Development tools__. Code with confidence. Check styles, scripts, and markdown for errors and fix automatically or manually.
+
+5. __Bootstrap framework__. Build robust, flexible, and intuitive websites with Bootstrap. Or use any other front-end framework if you prefer.
+
+6. __Netlify-ready__. Deploy to Netlify with sensible defaults. Easily use Netlify Functions, Netlify Redirects, and Netlify Headers.
+
+## Requirements
+
+Make sure all dependencies have been installed:
+
+- [Hugo](https://gohugo.io/getting-started/installing/) >= 0.75.0/extended (needed for SCSS processing support)
+- [Node.js](https://nodejs.org/) >= 14.15.0 (needed to install npm packages and run commands)
+
+## Get started
+
+Have your local Hyas site in three steps:
+
+### 1. Create new Hyas project
+
+```bash
+git clone https://github.com/h-enk/hyas.git my-hyas-site
+```
+
+### 2. Install npm packages
 
 ```bash
 npm install
 ```
 
-This will take some time and will install all packages necessary to run Victor Hugo and its tasks.
-
-### :construction_worker: Development
-
-While developing your website, use:
+### 3. Start local development server
 
 ```bash
-npm start
+npm run start
 ```
 
-or for developing your website with `hugo server --buildDrafts --buildFuture`, use:
+## Other commands
 
-```bash
-npm run preview
-```
+Hyas comes with [commands](https://gethyas.com/docs/prologue/commands/) for common tasks.
 
-Then visit http://localhost:3000/ _- or a new browser windows popped-up already -_ to preview your new website. Webpack Dev Server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
+## Documentation
 
-### :package: Static build
+- [Netlify](https://docs.netlify.com/)
+- [Hugo](https://gohugo.io/documentation/)
+- [Hyas](https://gethyas.com/)
 
-To build a static version of the website inside the `/dist` folder, run:
+## Communities
 
-```bash
-npm run build
-```
+- [Netlify Community](https://community.netlify.com/)
+- [Hugo Forums](https://discourse.gohugo.io/)
+- [Hyas Discussions](https://github.com/h-enk/hyas/discussions)
 
-To get a preview of posts or articles not yet published, run:
-
-```bash
-npm run build:preview
-```
-
-See [package.json](package.json#L8) for all tasks.
-
-## Structure
-
-```
-|--site                // Everything in here will be built with hugo
-|  |--content          // Pages and collections - ask if you need extra pages
-|  |--data             // YAML data files with any data for use in examples
-|  |--layouts          // This is where all templates go
-|  |  |--partials      // This is where includes live
-|  |  |--index.html    // The index page
-|  |--static           // Files in here ends up in the public folder
-|--src                 // Files that will pass through the asset pipeline
-|  |--css              // Webpack will bundle imported css separately
-|  |--index.js         // index.js is the webpack entry for your css & js assets
-```
-
-## Basic Concepts
-
-You can read more about Hugo's template language in their documentation here:
-
-https://gohugo.io/templates/overview/
-
-The most useful page there is the one about the available functions:
-
-https://gohugo.io/templates/functions/
-
-For assets that are completely static and don't need to go through the asset pipeline,
-use the `site/static` folder. Images, font-files, etc, all go there.
-
-Files in the static folder end up in the web root. So a file called `site/static/favicon.ico`
-will end up being available as `/favicon.ico` and so on...
-
-The `src/index.js` file is the entrypoint for webpack and will be built to `/dist/main.js`
-
-You can use **ES6** and use both relative imports or import libraries from npm.
-
-Any CSS file imported into the `index.js` will be run through Webpack, compiled with [PostCSS Next](http://cssnext.io/), and
-minified to `/dist/[name].[hash:5].css`. Import statements will be resolved as part of the build.
-
-## Environment variables
-
-To separate the development and production _- aka build -_ stages, all gulp tasks run with a node environment variable named either `development` or `production`.
-
-You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for a conditional statement:
-
-    {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
-
-All tasks starting with _build_ set the environment variable to `production` - the other will set it to `development`.
-
-## Deploying to Netlify
-
-- Push your clone to your own GitHub repository.
-- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
-
-Now Netlify will build and deploy your site whenever you push to git.
-
-You can also click this button:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
-
-## Enjoy!! 😸
+## Blog
+<!--START_SECTION:feed-->
+* [Say hello to Hyas 👋](https:&#x2F;&#x2F;gethyas.com&#x2F;blog&#x2F;say-hello-to-hyas&#x2F;)
+<!--END_SECTION:feed-->
