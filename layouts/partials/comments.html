@@ -1,0 +1,46 @@
+<script src="https://utteranc.es/client.js"
+    repo="rahul-arasikere/rahul-arasikere.github.io"
+    issue-term="pathname"
+    label="chatter" 
+    theme={{- if (eq .Site.Params.defaultTheme "dark" ) }} "github-dark" {{- else }} "github-light" {{-  end }}
+    crossorigin="anonymous"
+    async
+>
+</script>
+
+{{- if (not .Site.Params.disableThemeToggle) }}
+
+<script>
+    // wait for utterances to load and send it's first message.
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') {
+            return;
+        }
+        const dark_message = {
+            type: 'set-theme',
+            theme: 'github-dark'
+        };
+        const light_message = {
+            type: 'set-theme',
+            theme: 'github-light'
+        };
+        const utterances = document.querySelector('iframe').contentWindow; // try event.source instead
+        if (localStorage.getItem("pref-theme") === "dark") {
+            utterances.postMessage(dark_message, 'https://utteranc.es');
+
+        } else {
+            utterances.postMessage(light_message, 'https://utteranc.es');
+
+        }
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            if (document.body.className.includes("dark")) {
+                utterances.postMessage(dark_message, 'https://utteranc.es');
+
+            } else {
+                utterances.postMessage(light_message, 'https://utteranc.es');
+            }
+        })
+    });
+</script>
+
+{{- end }}

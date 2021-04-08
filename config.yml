@@ -4,7 +4,7 @@ paginate: 5
 theme: PaperMod
 
 enableRobotsTXT: true
-buildDrafts: false
+buildDrafts: true
 buildFuture: false
 buildExpired: false
 
@@ -32,11 +32,11 @@ params:
     ShowBreadCrumbs: true
     disableSpecial1stPost: false
     disableScrollToTop: false
-    comments: false
+    comments: true
     hidemeta: false
     hideSummary: false
-    showtoc: false
-    tocopen: false
+    showtoc: true
+    tocopen: true
 
     assets:
         favicon: "<link / abs url>"
@@ -64,11 +64,6 @@ params:
             - name: Tags
               url: tags
 
-    # home-info mode
-    homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to my blog
-
     socialIcons:
         - name: twitter
           url: "https://twitter.com/@rahul_arasikere"
@@ -79,14 +74,15 @@ params:
         - name: email
           url: "mailto:arasikere.rahul@gmail.com"
         - name: other
+          url: "https://rahul-arasikere.github.io/assets/resume.pdf"
 
-    analytics:
-        google:
-            SiteVerificationTag: "XYZabc"
-        bing:
-            SiteVerificationTag: "XYZabc"
-        yandex:
-            SiteVerificationTag: "XYZabc"
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+    #     bing:
+    #         SiteVerificationTag: "XYZabc"
+    #     yandex:
+    #         SiteVerificationTag: "XYZabc"
 
     cover:
         hidden: true # hide everywhere but not in structured data
@@ -110,6 +106,10 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
+        - identifier: projects
+          name: projects
+          url: /projects/
+          weight: 1
         - identifier: categories
           name: categories
           url: /categories/
@@ -118,10 +118,6 @@ menu:
           name: tags
           url: /tags/
           weight: 20
-        - identifier: example
-          name: example.org
-          url: https://example.org
-          weight: 30
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
