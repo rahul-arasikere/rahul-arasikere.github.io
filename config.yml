@@ -91,11 +91,9 @@ params:
 
     editPost:
         URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/content"
-        Text: "Suggest Changes" # edit text
-        appendFilePath: true # to append file path to Edit link
+        Text: "Make a contribution"
+        appendFilePath: true
 
-    # for search
-    # https://fusejs.io/api/options.html
     fuseOpts:
         isCaseSensitive: false
         shouldSort: true
@@ -118,13 +116,22 @@ menu:
           name: tags
           url: /tags/
           weight: 20
+        - identifier: search
+          name: search
+          url: /search/
+          weight: 30
 
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
     highlight:
-        # anchorLineNos: true
+        anchorLineNos: true
         codeFences: true
         guessSyntax: true
         lineNos: true
         style: monokai
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
