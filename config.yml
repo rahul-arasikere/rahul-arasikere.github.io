@@ -128,6 +128,20 @@ menu:
 
 pygmentsUseClasses: true
 markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
   highlight:
     anchorLineNos: true
     codeFences: true

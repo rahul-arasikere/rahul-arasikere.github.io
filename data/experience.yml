@@ -1,21 +1,26 @@
 list:
+  - title: "[BU Spark!](https://www.bu.edu/spark/)"
+    end: "Present"
+    subtitle: "X-Lab Project Intern"
+    start: "2022-05-12"
+    description: "Researching the feasibility of running a drone flight controller software on an x86 platform."
   - title: "[Boston University Rocket Propulsion Group](https://burpg.org)"
     end: "2022-05-12"
     subtitle: Software Developer
     start: "2018-09-30"
-    description: "Developing data acquisition software for test stand. Working on avionics software for space shot vehicle."
+    description: "Designed and developed a data acquisition platform for a rocket engine test stand test stand. Researched into building a real-time embedded flight computer. Maintained the entire tech stack for internal team communication."
   - title: "[Simplify360](https://simplify360.com)"
     end: "2020-08-31"
-    subtitle: Data Science Intern
+    subtitle: Natural Language Processing Intern
     start: "2020-06-30"
-    description: "Worked on automated text tagging and classification based on the clients' requirements to interface with their B2B systems."
+    description: "Researched and developed an automated text tagging and classification based on the clients' requirements to interface with their B2B systems."
   - title: "[Remidio Innovative Solutions Pvt. Ltd.](https://www.remidio.us/)"
     end: "2019-08-31"
     subtitle: Data Science Intern
     start: "2019-06-30"
-    description: "Leveraged their telemedicine platform to develop and train a model to automatically grade fundus images for the presence of age related macular degeneration."
+    description: "Leveraged their tele-medicine platform to develop and train a model to automatically grade fundus images for the presence of age related macular degeneration. The model achieved 87% accuracy in validation."
   - title: "[Spectral Insights](http://spectralinsights.com)"
     end: "2018-07-31"
-    subtitle: Intern
+    subtitle: Computer Vision Intern
     start: "2018-06-30"
-    description: "Spectral Insights is developing a complete Iot powered multipurpose microscope along with analytics software. I was using OpenCV to identify glomerulii in Renal Biopsies."
+    description: "Developed a pipeline module that provided doctors with analytics on kidney biopsies."
