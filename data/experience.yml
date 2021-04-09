@@ -1,0 +1,21 @@
+list:
+  - title: "[Boston University Rocket Propulsion Group](https://burpg.org)"
+    end: "2022-05-12"
+    subtitle: Software Developer
+    start: "2018-09-30"
+    description: "Developing data acquisition software for test stand. Working on avionics software for space shot vehicle."
+  - title: "[Simplify360](https://simplify360.com)"
+    end: "2020-08-31"
+    subtitle: Data Science Intern
+    start: "2020-06-30"
+    description: "Worked on automated text tagging and classification based on the clients' requirements to interface with their B2B systems."
+  - title: "[Remidio Innovative Solutions Pvt. Ltd.](https://www.remidio.us/)"
+    end: "2019-08-31"
+    subtitle: Data Science Intern
+    start: "2019-06-30"
+    description: "Leveraged their telemedicine platform to develop and train a model to automatically grade fundus images for the presence of age related macular degeneration."
+  - title: "[Spectral Insights](http://spectralinsights.com)"
+    end: "2018-07-31"
+    subtitle: Intern
+    start: "2018-06-30"
+    description: "Spectral Insights is developing a complete Iot powered multipurpose microscope along with analytics software. I was using OpenCV to identify glomerulii in Renal Biopsies."

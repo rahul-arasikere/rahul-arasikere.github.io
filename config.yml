@@ -11,127 +11,132 @@ buildExpired: false
 googleAnalytics: UA-123-45
 
 minify:
-    disableXML: true
-    minifyOutput: true
+  disableXML: true
+  minifyOutput: true
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "Rahul Arasikere"
+  description: "Rahul Arasikere description"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: "Rahul Arasikere"
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  math: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+
+  assets:
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Rahul Arasikere"
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
     title: "Rahul Arasikere"
-    description: "Rahul Arasikere description"
-    keywords: [Blog, Portfolio, PaperMod]
-    author: "Rahul Arasikere"
-    # author: ["Me", "You"] # multiple authors
-    images: ["<link or path of image for opengraph, twitter-cards>"]
-    DateFormat: "January 2, 2006"
-    defaultTheme: auto # dark, light
-    disableThemeToggle: false
+    subtitle: "Hi, welcome to my little corner of the internet."
+    imageUrl: "https://gravatar.com/avatar/691600ea562e94be491fb000d67cd8f3?size=256"
+    imageWidth: 256
+    imageHeight: 256
+    imageTitle: "rahul arasikere"
+    buttons:
+      - name: "about_me/"
+        url: "about_me"
+      - name: projects/
+        url: projects
+      - name: blog/
+        url: blog
 
-    ShowReadingTime: true
-    ShowShareButtons: true
-    ShowPostNavLinks: true
-    ShowBreadCrumbs: true
-    disableSpecial1stPost: false
-    disableScrollToTop: false
-    comments: true
-    hidemeta: false
-    hideSummary: false
-    showtoc: true
-    tocopen: true
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/@rahul_arasikere"
+    - name: linkedin
+      url: "https://linkedin.com/in/rahul-arasikere"
+    - name: github
+      url: "https://github.com/rahul-arasikere"
+    - name: email
+      url: "mailto:arasikere.rahul@gmail.com"
+    - name: other
+      label: resume
+      url: "https://rahul-arasikere.github.io/assets/resume.pdf"
+    - name: rss
+      url: "/index.xml"
 
-    assets:
-        favicon: "<link / abs url>"
-        favicon16x16: "<link / abs url>"
-        favicon32x32: "<link / abs url>"
-        apple_touch_icon: "<link / abs url>"
-        safari_pinned_tab: "<link / abs url>"
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+  #     bing:
+  #         SiteVerificationTag: "XYZabc"
+  #     yandex:
+  #         SiteVerificationTag: "XYZabc"
 
-    label:
-        text: "Rahul Arasikere"
-        iconHeight: 35
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
 
-    # profile-mode
-    profileMode:
-        enabled: true # needs to be explicitly set
-        title: "Rahul Arasikere"
-        subtitle: "This is subtitle"
-        imageUrl: "https://gravatar.com/avatar/691600ea562e94be491fb000d67cd8f3?size=256"
-        imageWidth: 256
-        imageHeight: 256
-        imageTitle: "rahul arasikere"
-        buttons:
-            - name: Posts
-              url: posts
-            - name: Tags
-              url: tags
+  editPost:
+    URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/content"
+    Text: "Make a contribution"
+    appendFilePath: true
 
-    socialIcons:
-        - name: twitter
-          url: "https://twitter.com/@rahul_arasikere"
-        - name: linkedin
-          url: "https://linkedin.com/in/rahul-arasikere"
-        - name: github
-          url: "https://github.com/rahul-arasikere"
-        - name: email
-          url: "mailto:arasikere.rahul@gmail.com"
-        - name: other
-          url: "https://rahul-arasikere.github.io/assets/resume.pdf"
-
-    # analytics:
-    #     google:
-    #         SiteVerificationTag: "XYZabc"
-    #     bing:
-    #         SiteVerificationTag: "XYZabc"
-    #     yandex:
-    #         SiteVerificationTag: "XYZabc"
-
-    cover:
-        hidden: true # hide everywhere but not in structured data
-        hiddenInList: true # hide on list pages and home
-        hiddenInSingle: true # hide on single page
-
-    editPost:
-        URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/content"
-        Text: "Make a contribution"
-        appendFilePath: true
-
-    fuseOpts:
-        isCaseSensitive: false
-        shouldSort: true
-        location: 0
-        distance: 1000
-        threshold: 0.4
-        minMatchCharLength: 0
-        keys: ["title", "permalink", "summary", "content"]
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
 menu:
-    main:
-        - identifier: projects
-          name: projects
-          url: /projects/
-          weight: 1
-        - identifier: categories
-          name: categories
-          url: /categories/
-          weight: 10
-        - identifier: tags
-          name: tags
-          url: /tags/
-          weight: 20
-        - identifier: search
-          name: search
-          url: /search/
-          weight: 30
+  main:
+    - identifier: "about_me"
+      name: "about_me/"
+      url: /about_me/
+      weight: 1
+    - identifier: projects
+      name: projects/
+      url: /projects/
+      weight: 2
+    - identifier: blog
+      name: blog/
+      url: /blog/
+      weight: 3
+    - identifier: search
+      name: search/
+      url: /search/
+      weight: 30
 
 pygmentsUseClasses: true
 markup:
-    highlight:
-        anchorLineNos: true
-        codeFences: true
-        guessSyntax: true
-        lineNos: true
-        style: monokai
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: dracula
 
 outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON
+  home:
+    - HTML
+    - RSS
+    - JSON
