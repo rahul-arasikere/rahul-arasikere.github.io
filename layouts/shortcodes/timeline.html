@@ -4,7 +4,7 @@
 
 <div class="timeline">
     {{ range $timeline_value := $timeline_data.list }}
-    <div class="timeline-item" date-is='{{ $timeline_value.start | $.Page.RenderString }} - {{ $timeline_value.end | $.Page.RenderString }}'>
+    <div class="timeline-item" date-is='{{ $timeline_value.start }} - {{ $timeline_value.end }}.'>
         <h4>{{ $timeline_value.title | $.Page.RenderString }}</h4>
         <h5>{{ $timeline_value.subtitle | $.Page.RenderString }}</h5>
         <p>
