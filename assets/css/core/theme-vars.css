@@ -10,23 +10,23 @@
   --entry: #f2f2f2;
   --primary: rgba(13, 13, 13);
   --secondary: rgba(38, 38, 38);
-  --tertiary: rgba(89, 89, 89);
+  --tertiary: rgba(140, 140, 140);
   --content: rgba(38, 38, 38);
   --hljs-bg: #262626;
-  --code-bg: #bfbfbf;
-  --border: #a6a6a6;
+  --code-bg: #d9d9d9;
+  --border: #d0d0d0;
 }
 
 .dark {
   --theme: #252625;
-  --entry: #585959;
+  --entry: #252525;
   --primary: rgba(242, 242, 242);
   --secondary: rgba(217, 217, 217);
-  --tertiary: rgba(166, 166, 166);
+  --tertiary: rgba(64, 64, 64);
   --content: rgba(255, 255, 255, 0.74);
   --hljs-bg: #2e2e33;
-  --code-bg: #262626;
-  --border: #3F403F;
+  --code-bg: #595959;
+  --border: #404040;
 }
 
 .list {
