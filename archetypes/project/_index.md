@@ -6,19 +6,19 @@ date: {{ .Date }}
 tags: []
 author: "Rahul Arasikere"
 # author: ["Me", "You"] # multiple authors
-showToc: false
+showToc: true
 TocOpen: false
-draft: false
+draft: true
 hidemeta: false
-comments: false
+comments: true
 description: "A super interesting description..."
 disableHLJS: false # to disable highlightjs
-disableShare: true
+disableShare: false
 hideSummary: false
 searchHidden: false
-ShowReadingTime: false
+ShowReadingTime: true
 ShowBreadCrumbs: true
-ShowPostNavLinks: false
+ShowPostNavLinks: true
 # cover:
 #     image: "<image path/url>" # image path/url
 #     alt: "<alt text>" # alt text
