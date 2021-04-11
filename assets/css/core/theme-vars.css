@@ -19,7 +19,7 @@
 
 .dark {
   --theme: #252625;
-  --entry: #252525;
+  --entry: #404040;
   --primary: rgba(242, 242, 242);
   --secondary: rgba(217, 217, 217);
   --tertiary: rgba(64, 64, 64);
