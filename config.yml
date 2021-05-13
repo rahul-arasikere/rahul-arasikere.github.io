@@ -9,8 +9,8 @@ buildFuture: false
 buildExpired: false
 
 minify:
-  disableXML: true
-  minifyOutput: false
+  disableXML: false
+  minifyOutput: true
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -35,10 +35,10 @@ params:
   showtoc: true
   tocopen: true
 
-  # assets:
-  #   favicon: "<link / abs url>"
+  assets:
+    favicon: "resources/images/favicon.ico"
   #   favicon16x16: "<link / abs url>"
-  #   favicon32x32: "<link / abs url>"
+    favicon32x32: "resources/images/favicon.ico"
   #   apple_touch_icon: "<link / abs url>"
   #   safari_pinned_tab: "<link / abs url>"
 
@@ -92,7 +92,7 @@ params:
     hiddenInSingle: false # hide on single page
 
   editPost:
-    URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/content"
+    URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/edit/master/"
     Text: "Make a contribution"
     appendFilePath: true
 
