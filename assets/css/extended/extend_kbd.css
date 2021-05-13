@@ -1,0 +1,11 @@
+kbd {
+  background-color: var(--theme);
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 8px;
+  white-space: nowrap;
+}

@@ -1,0 +1,153 @@
+baseURL: "https://rahul-arasikere.github.io/"
+title: "Rahul Arasikere"
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "Rahul Arasikere"
+  description: "Rahul Arasikere's personal blog."
+  keywords: [Blog, Portfolio]
+  author: "Rahul Arasikere"
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  math: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+
+  # assets:
+  #   favicon: "<link / abs url>"
+  #   favicon16x16: "<link / abs url>"
+  #   favicon32x32: "<link / abs url>"
+  #   apple_touch_icon: "<link / abs url>"
+  #   safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Rahul Arasikere"
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Rahul Arasikere"
+    subtitle: "Hi, welcome to my little corner of the internet.  If you are interested in this website theme, [<u>check this post</u>](/posts/hugo-website/)."
+    imageUrl: "https://gravatar.com/avatar/691600ea562e94be491fb000d67cd8f3?size=256"
+    imageWidth: 256
+    imageHeight: 256
+    imageTitle: "rahul arasikere"
+    buttons:
+      - name: "about_me/"
+        url: "about_me"
+      - name: projects/
+        url: projects
+      - name: blog/
+        url: blog
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/@rahul_arasikere"
+    - name: linkedin
+      url: "https://linkedin.com/in/rahul-arasikere"
+    - name: github
+      url: "https://github.com/rahul-arasikere"
+    - name: email
+      url: "mailto:arasikere.rahul@gmail.com"
+    - name: other
+      label: resume
+      url: "https://rahul-arasikere.github.io/assets/resume.pdf"
+    - name: rss
+      url: "/index.xml"
+
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+  #     bing:
+  #         SiteVerificationTag: "XYZabc"
+  #     yandex:
+  #         SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  editPost:
+    URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/content"
+    Text: "Make a contribution"
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: "about_me"
+      name: "about_me/"
+      url: /about_me/
+      weight: 1
+    - identifier: projects
+      name: projects/
+      url: /projects/
+      weight: 2
+    - identifier: blog
+      name: blog/
+      url: /blog/
+      weight: 3
+    - identifier: search
+      name: search/
+      url: /search/
+      weight: 30
+
+pygmentsUseClasses: true
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: dracula
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

@@ -1,0 +1,51 @@
+mark {
+  background: #d9a23d;
+  border-radius: var(--radius);
+  padding: 4px;
+  color: var(--content);
+}
+
+ins {
+  color: #8db059;
+  cursor: help;
+  position: relative;
+}
+
+ins::before {
+  content: "(correction)";
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  color: #8db059;
+  font-size: 0.5em;
+  transition: all 500ms ease;
+  top: -2em;
+  left: 0;
+  opacity: 0;
+}
+
+ins:hover del {
+  max-width: 9em;
+  text-indent: 0em;
+}
+
+ins:hover::before {
+  opacity: 1;
+  top: -1.2em;
+}
+
+ins del {
+  color: #e87d75;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+  transition: all 200ms ease;
+  max-width: 0;
+  text-indent: -999em;
+}
+
+ins del::before {
+  content: " ";
+  visibility: hidden;
+}
