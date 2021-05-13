@@ -8,8 +8,6 @@ buildDrafts: true
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
-
 minify:
   disableXML: true
   minifyOutput: true
@@ -17,10 +15,9 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: "Rahul Arasikere"
-  description: "Rahul Arasikere description"
-  keywords: [Blog, Portfolio, PaperMod]
+  description: "Rahul Arasikere's personal blog."
+  keywords: [Blog, Portfolio]
   author: "Rahul Arasikere"
-  # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
@@ -38,12 +35,12 @@ params:
   showtoc: true
   tocopen: true
 
-  assets:
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+  # assets:
+  #   favicon: "<link / abs url>"
+  #   favicon16x16: "<link / abs url>"
+  #   favicon32x32: "<link / abs url>"
+  #   apple_touch_icon: "<link / abs url>"
+  #   safari_pinned_tab: "<link / abs url>"
 
   label:
     text: "Rahul Arasikere"
@@ -53,7 +50,7 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: "Rahul Arasikere"
-    subtitle: "Hi, welcome to my little corner of the internet."
+    subtitle: "Hi, welcome to my little corner of the internet.  If you are interested in this website theme, [<u>check this post</u>](/posts/hugo-website/)."
     imageUrl: "https://gravatar.com/avatar/691600ea562e94be491fb000d67cd8f3?size=256"
     imageWidth: 256
     imageHeight: 256

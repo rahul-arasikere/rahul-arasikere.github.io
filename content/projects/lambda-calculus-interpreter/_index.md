@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Lambda Calculus Interpreter"
+date: 2021-04-11T14:54:37-04:00
 # weight: 1
 # aliases: ["/first"]
 tags: []
@@ -19,10 +19,10 @@ searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-cover:
-    image: "images/featured.jpg" # image path/url
-    alt: "featured image" # alt text
-    caption: "featured image" # display caption under cover
-    relative: true # when using page bundles set this to true
-    hidden: false # only hide on current single page
+# cover:
+#     image: "<image path/url>" # image path/url
+#     alt: "<alt text>" # alt text
+#     caption: "<text>" # display caption under cover
+#     relative: false # when using page bundles set this to true
+#     hidden: true # only hide on current single page
 ---
