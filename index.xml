@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rahul Arasikere</title>
+    <link>https://rahul-arasikere.github.io/</link>
+    <description>Recent content on Rahul Arasikere</description>
+    <image>
+      <url>https://rahul-arasikere.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://rahul-arasikere.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 11 Apr 2021 14:55:30 -0400</lastBuildDate><atom:link href="https://rahul-arasikere.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://rahul-arasikere.github.io/about_me/</link>
+      <pubDate>Thu, 08 Apr 2021 12:25:11 -0400</pubDate>
+      
+      <guid>https://rahul-arasikere.github.io/about_me/</guid>
+      <description>Hi, I am a final year computer science student studying at Boston University. I am from Bangalore, India. My interests are in operating systems, embedded and real-time oses. I also like to tinker with hardware and build stuff.
+ Education Some of my relevant coursework include:
+ CS210: Introduction to Computer Systems  CS320: Introduction to Programming Languages CS330: Introduction to Algorithms  CS350: Computer System Fundamentals  CS410: Advanced Software Systems  CS525: Introduction to Compiler Design  EC535: Introduction to Embedded Systems EC527: Multi-core GPU Programming  CS350: Introduction to Operating Systems (Also known as CS552)  In addition to the courses I have taken at Boston University, I am also a certified from XRTerra as an AR/VR developer through their AR x VR Developer Program .</description>
+    </item>
+    
+    <item>
+      <title>Hugo Website</title>
+      <link>https://rahul-arasikere.github.io/posts/hugo-website/</link>
+      <pubDate>Sun, 11 Apr 2021 14:55:30 -0400</pubDate>
+      
+      <guid>https://rahul-arasikere.github.io/posts/hugo-website/</guid>
+      <description>Hosting a similar portfolio site.</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>
