@@ -92,7 +92,7 @@ params:
     hiddenInSingle: false # hide on single page
 
   editPost:
-    URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/edit/master/"
+    URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/edit/master/content"
     Text: "Make a contribution"
     appendFilePath: true
 

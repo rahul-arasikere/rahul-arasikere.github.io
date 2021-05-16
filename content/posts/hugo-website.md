@@ -17,7 +17,7 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 editPost:
-  URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/content"
+  URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/edit/master/content"
   Text: "Suggest Changes" # edit text
   appendFilePath: true # to append file path to Edit link
 ---
