@@ -74,7 +74,7 @@ params:
       url: "mailto:arasikere.rahul@gmail.com"
     - name: other
       label: resume
-      url: "https://rahul-arasikere.github.io/assets/resume.pdf"
+      url: "https://rahul-arasikere.github.io/resume.pdf"
     - name: rss
       url: "/index.xml"
 
@@ -92,7 +92,7 @@ params:
     hiddenInSingle: false # hide on single page
 
   editPost:
-    URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/edit/master/content"
+    URL: "https://github.com/rahul-arasikere/rahul-arasikere.github.io/edit/master/"
     Text: "Make a contribution"
     appendFilePath: true
 
