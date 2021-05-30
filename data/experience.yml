@@ -1,4 +1,9 @@
 list:
+  - title: "[Shell TechWorks](https://www.shell.com/energy-and-innovation/entrepreneurs-and-start-ups/shell-techworks.html)"
+    end: "Present"
+    subtitle: "Software Engineer Intern"
+    start: "May, 2022"
+    description: "Developing a refueling station for hydrogen based fuel systems."
   - title: "[BU Spark!](https://www.bu.edu/spark/)"
     end: "Present"
     subtitle: "X-Lab Project Intern"
