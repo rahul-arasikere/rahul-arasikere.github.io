@@ -16,11 +16,6 @@ main:                # sections in the website sidebar
     url: /search/
     weight: 5
 
-  - identifier: contact
-    name: Contact
-    url: /contact/
-    weight: 6
-
   - identifier: github
     name: GitHub Profile
     url: 'https://github.com/rahul-arasikere/'

@@ -1,6 +1,6 @@
 list:
   - title: "[Shell TechWorks](https://www.shell.com/energy-and-innovation/entrepreneurs-and-start-ups/shell-techworks.html)"
-    end: "Present"
+    end: "March 2023"
     subtitle: "Software Engineer Intern"
     start: "May, 2022"
     description: "Developing a refueling station for hydrogen based fuel systems."
@@ -29,4 +29,3 @@ list:
     subtitle: Computer Vision Intern
     start: "June, 2018"
     description: "Developed a pipeline module that provided doctors with analytics on kidney biopsies."
-    

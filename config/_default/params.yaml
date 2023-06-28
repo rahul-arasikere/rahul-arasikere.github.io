@@ -5,19 +5,17 @@ description: >-
 # SEO keywords. Used in 'meta name="keywords"' tag.
 # May be overridden by .Keywords or .Tags in front matter.
 keywords:
-  - hugo
-  - ed
-  - hugo theme
-  - minimal
-  - responsive
-  - clean
+  - rahul
+  - arasikere
+  - embedded
+  - boston
 
 # A "copyright"-line to be added to RSS/Atom files.
 # "&copy;" and "{year}" will be replaced by © and the current year.
 copyright: 'Copyright &copy; 2023-{year} Rahul Arasikere'
 
 # Colour scheme. Options: red, orange, magenta, cyan, blue, brown
-colorScheme: 'cyan'
+colorScheme: 'red'
 
 # Used in site header
 tagline: an embedded engineer currently working in Boston.
@@ -71,7 +69,7 @@ assets:
   apple_touch_icon: ''
 
   # Logo image, relative to ./assets
-  logo: /img/open-graph-logo.png
+  logo: /img/logo.jpg
   disable_fingerprinting: false
 
 seo:

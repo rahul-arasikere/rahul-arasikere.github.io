@@ -1,0 +1,21 @@
+<div class="articles">
+    <h1>Blog</h1>
+        {{ range first 10 (where site.RegularPages.ByDate.Reverse "Type" "in" site.Params.mainSections) }}
+            <article class="post">
+                <header>
+                    <h2 class="post-title">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+                    <p class="post-meta">
+                        Published {{ .Date.Format "Monday, January 2, 2006" }}.
+                    </p>
+                </header>
+                <p class="post-content">
+                    {{ .Summary }}
+                </p>
+                <footer>
+                    <a href="{{ .Permalink }}" class="read-more">continue reading ...</a>
+                </footer>
+            </article>
+        {{ end }}
+</div>
