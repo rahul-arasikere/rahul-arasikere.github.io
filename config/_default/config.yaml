@@ -14,7 +14,8 @@ title: Rahul Arasikere
 
 # Use full path to theme's repository in case of using Hugo Modules.
 # This is replaced in go.mod for exampleSite to point to the directory above.
-theme: github.com/sergeyklay/gohugo-theme-ed
+theme: github.com/barklan/hugo-dead-simple
+
 
 enableRobotsTXT: true
 
@@ -145,15 +146,14 @@ author:
 
 # For more see https://gohugo.io/getting-started/configuration-markup/
 markup:
-  defaultMarkdownHandler: goldmark
   highlight:
-    # false due to generated Syntax Highlighter CSS
+    codeFences: true
+    style: bw
+    lineNumbersInTable: false
     noClasses: false
   goldmark:
-    parser:
-      attribute:
-      # Enable custom attribute support for blocks
-        block: true
+    renderer:
+      unsafe: true
 
 # If enableGitInfo is true, it will override any lastmod dates in our
 # front matter. We should at least allow ourselves to manually override
@@ -170,4 +170,5 @@ module:
     extended: true
     min: '0.95.0'
   imports:
-    - path: github.com/sergeyklay/gohugo-theme-ed
+    - path: github.com/barklan/hugo-dead-simple
+
