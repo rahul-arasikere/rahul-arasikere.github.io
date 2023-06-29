@@ -24,7 +24,7 @@ In addition to the courses I have taken at Boston University, I am also a certif
 
 ## Experience
 
-I have to fill this out at some point.
+{{< experience >}}
 
 ## Contact
 

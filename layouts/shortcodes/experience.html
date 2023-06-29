@@ -1,0 +1,10 @@
+{{ range $.Site.Data.experience.list }}
+<div class="article-meta">
+    <header>
+        <h4>{{ .title | markdownify }} <span> | </span>
+            {{ .subtitle }}</h4>
+        <i><sub>{{ .start }} - {{ .end }} </sub></i>
+    </header>
+    <p> {{ .description }} </p>
+</div>
+{{ end }}
